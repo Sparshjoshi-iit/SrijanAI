@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 0 23px rgba(0, 255, 204, 0.64);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.logo {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* 🔹 Input Fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;  /* Increased margin for better spacing */
+    border: none;
+    outline: none;
+    background: rgba(5, 117, 127, 0.484);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    display: block; /* Ensures they are stacked properly */
+    box-shadow: 0 0 5px rgba(0, 255, 204, 0); /* Initially hidden */
+}
+
+/* 🔥 Border Shadow Effect on Focus */
+input:focus {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.9);
+    border: 2px solid rgba(0, 255, 204, 0.8);
+    background: rgba(5, 117, 127, 0.744);
+}
+#password {
+    margin-bottom: 20px; 
+    background-color: rgba(0, 255, 204, 0.325); /* Adjusted opacity for better visibility */
+    color: white;
+    font-size: 18px; /* Slightly bigger dots */
+    font-weight: bold;
+    letter-spacing: 2px; /* Increases spacing between dots */
+    border: 2px solid rgba(0, 255, 204, 0.616);
+    transition: 0.3s;
+}
+
+/* 🔥 Improved Focus Effect */
+#password:focus {
+    background-color: rgba(0, 255, 204, 0.452);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.478);
+}
+/* 🔹 Buttons - Added More Space */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;  /* Added spacing */
+}
+#login {
+    background: linear-gradient(45deg, #00ffcc, #0066ff);
+    color: white;
+}
+#register {
+    background: linear-gradient(45deg, #00ffcc, #0066ff);
+    color: white;
+}
+#login:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffcc;
+}
+#register:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+#google-signin {
+    background: #db4437;
+    margin-top: 10px;
+}
+
+#google-signin:hover {
+    background: #c1351d;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #bb2119;;
+}
+
+/* 🔹 Status Message */
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00ffcc;
+}

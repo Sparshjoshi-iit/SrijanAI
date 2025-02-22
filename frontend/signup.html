@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SrijanAI - Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <h2>Create Your Account</h2>
+        <p>Join SrijanAI and transform your ideas into reality.</p>
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="password" id="password" placeholder="Enter Password">
+        <input type="password" id="confirm-password" placeholder="Confirm Password">
+        
+        <button id="register">Sign Up</button>
+        <button id="google-signup">Sign Up with Google</button>
+
+        <p>Already have an account? <a href="index.html">Sign In</a></p>
+        <p id="status"></p>
+    </div>
+
+    <!-- ✅ Firebase via CDN -->
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"></script>
+
+    <!-- ✅ Load Your Firebase Auth Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

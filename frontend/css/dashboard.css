@@ -1,0 +1,78 @@
+/* 🔥 Sidebar - Modern Glassmorphism */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to right, #183c59, #386da6, #3e3e77);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: rgba(22, 33, 62, 0.85); /* Semi-transparent glass effect */
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Sidebar Title */
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00e6ff; /* Bright Neon Blue */
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00e6ff;
+}
+
+/* 🔹 Sidebar Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    margin: 8px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(27, 42, 73, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 20px #00e6ff;
+}
+
+.sidebar ul li:hover {
+    background: #00e6ff; /* Neon Blue */
+    color: #000000;
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #00e6ff;
+}
+
+.sidebar ul li.active {
+    background: #1e3c72;
+    color: #00e6ff;
+    border: 2px solid #00e6ff;
+    box-shadow: 0 0 15px #00e6ff;
+}
+.sidebar:hover {
+    box-shadow: 5px 0px 30px rgba(0, 230, 255, 0.5);
+}
